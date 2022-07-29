@@ -96,3 +96,10 @@ document.oncontextmenu = function (e) {
         audio.play()
 }
 
+document.querySelector('body').addEventListener("click", () => {
+    let audio = document.querySelector('audio')
+    document.getElementById("end").style.display = "none"
+        document.querySelector('.scream').style.display = "flex"
+        audio.play()
+})
+
