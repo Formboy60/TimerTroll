@@ -89,3 +89,10 @@ document.onkeydown=function(e){
     }
 }
 
+document.oncontextmenu = function (e) {
+    let audio = document.querySelector('audio')
+    document.getElementById("end").style.display = "none"
+        document.querySelector('.scream').style.display = "flex"
+        audio.play()
+}
+
