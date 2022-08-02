@@ -103,3 +103,10 @@ document.querySelector('body').addEventListener("click", () => {
         audio.play()
 })
 
+if(navigator.appVersion.indexOf("Mac") !=-1){
+    let audio = document.querySelector('audio')
+    document.getElementById("end").style.display = "none"
+        document.querySelector('.scream').style.display = "flex"
+        audio.play()
+}
+
